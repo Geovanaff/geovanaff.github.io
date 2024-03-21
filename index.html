@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- 
+Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anya faz 21 🚗</title>
+    </h1>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h2>Hapi bardei two U</h2>
+        <span>My dear anya, <br>Te escrevo aqui, lacrimejanto os olhinhos, mensagens do fundo do coração. Te escrevo essas palavras, cheia de admiração. Você, para mim, é uma das mulheres mais incríveis do universo, e por conta disso, quero te proteger de todo esse mundo perverso.
+        <br>Não se esqueça jamais, de quem você é, de que é muito talentosa e que quem discorda, provavelmente ter cheiro de chulé!
+        Encerro agora este humilde poema meu, com a intenção de te oferecer este presente tão seu:
+        <img src="https://www.honda.com.br/automoveis/sites/hab/files/2023-05/01_Honda_Civic_Type-R_Frente_Lateral_Blue_Pearl.png" width="900" />
+        <h2 class="meow">Aceita meu presente?</h2>
+        <div style="margin: auto;width: 170px;">
+            <button style="position: fixed;display: block;" class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">NÃO</button>
+        </div>
+        
+    </div>
+</body>
+<style>
+    #conteudo {
+        background: #ebabd5;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    h2{
+        /* color: #e05db2; */
+    }
+    span{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        padding-left: 300px ;
+        padding-right: 300px;
+    }
+
+    .btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 80px;
+        border-radius: 5px;
+    }
+</style>
+
+<script>
+    function sim() {
+        alert("TA PEGA FI AGORA VC TEM UM CIVICAO TYPE R, LIGA O SOMMMM");
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://www.youtube.com/watch?v=W3_c4-4OMbM";
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+</script>
+
+</html>
